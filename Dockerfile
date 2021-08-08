@@ -1,4 +1,4 @@
-FROM tomcat:8.0-alpine
+FROM tomcat
 
 MAINTAINER  khadeshailendra@gmail.com
 
