@@ -34,3 +34,12 @@
       register: status
 
     - debug: msg="{{status.stdout}}"
+    
+    - name: Deploy docker container
+      shell:
+         "docker pull khadeshailendra/project1:latest && docker container run -it -d --name cfs -p 8080:8080 khadeshailendra/project1"
+      register: doc
+
+    - debug: msg="{{doc.stdout}}"
+
+    
