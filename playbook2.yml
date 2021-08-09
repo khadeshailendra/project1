@@ -31,10 +31,7 @@
     - name: docker status
       shell: 
          "systemctl enable docker && systemctl status docker"
-      register: status
-
-    - debug: msg="{{status.stdout}}"
-    
+          
     - name: Stop n remove previous docker container
       shell:
          "docker stop cfs && docker rm cfs"
