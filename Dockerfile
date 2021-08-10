@@ -1,6 +1,6 @@
 FROM tomcat
 RUN rm -fr /usr/local/tomcat/webapps/ROOT
-COPY target/sample.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/sample.war /usr/local/tomcat/webapps/
 
 #FROM tomcat:8.0-alpine
 
